@@ -7,7 +7,7 @@ const app = express();
 app.get("/generate-audio", async (req, res) => {
   try {
     const text = req.query.text; // Assuming text is sent as a query parameter
-    const fileName = `${uuid()}.mp3`; // Generate a unique filename using uuid
+    const fileName = `audio.mp3`; // Generate a unique filename using uuid
     const filePath = await createAudioFileFromText(text, fileName);
     res.download(filePath); // Automatically downloads the generated audio file
   } catch (error) {
