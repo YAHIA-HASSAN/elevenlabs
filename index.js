@@ -1,5 +1,5 @@
 const express = require("express");
-const { createAudioFileFromText } = require(""); // Adjust the path accordingly
+const { createAudioFileFromText } = require("./eleven-labs"); // Adjust the path accordingly
 
 const app = express();
 
